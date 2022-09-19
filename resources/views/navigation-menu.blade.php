@@ -13,49 +13,43 @@
                 font-weight: 500;
                 font-size: 0.875rem;">
                 @hasrole('admin')
-                <a class="nav-link" href="{{ route('adminhome') }}" :active="request()->routeIs('adminhome')">এডমিন
-                    ড্যাশবোর্ড</a>
+                <a class="nav-link" href="{{ route('adminhome') }}" :active="request()->routeIs('adminhome')">Admin
+                    Dashboard</a>
                 @endhasrole
-                {{-- @hasrole('user|admin|superadmin')
-                <a class="nav-link" href="{{ route('userQuizHome') }}"
-                    :active="request()->routeIs('userQuizHome')">ইউজার কুইজ
-                    ড্যাশবোর্ড
-                </a>
-                @endhasrole --}}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('champPractice') }}"
-                        :active="request()->routeIs('champPractice')">চ্যাম্পিয়নশিপ প্রস্তুতি</a>
+                        :active="request()->routeIs('champPractice')">Championship Practice</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('Championship') }}"
-                        :active="request()->routeIs('Championship')">চ্যাম্পিয়নশিপ</a>
+                        :active="request()->routeIs('Championship')">Championship</a>
                 </li>
                 <li class="nav-item">
-                    <div class="dropdown"><a class="nav-link">চাকরির প্রস্তুতি
+                    <div class="dropdown"><a class="nav-link">Job Practice
                         </a>
                         @livewire('catecogy-component')
                     </div>
                 </li>
                 
                 <li class="nav-item">
-                    <div class="dropdown"><a class="nav-link">আডমিশন প্রস্তুতি 
+                    <div class="dropdown"><a class="nav-link">Admission Practice 
                         </a>
                         <div class="dropdown-content">
-                            <a href="#">মেডিক্যাল</a>
-                            <a href="#">ভার্সিটি</a>
-                            <a href="#">ইঞ্জিনিয়ারিং</a>
+                            <a href="#">Medical</a>
+                            <a href="#">University</a>
+                            <a href="#">Engineering</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <div class="dropdown"><a class="nav-link">লিডারবোর্ড
+                    <div class="dropdown"><a class="nav-link">Leaderboard
                         </a>
                         <div class="dropdown-content">
-                            <a href="{{route('QuizledarBoard')}}">চ্যাম্পিয়নশিপ প্রস্তুতি</a>
+                            <a href="{{route('QuizledarBoard')}}">Championship Practice</a>
                             @hasrole('user|admin|superadmin')
-                            <a href="{{route('ChampledarBoard')}}">চ্যাম্পিয়নশিপ</a>
-                            <a href="{{route('JobledarBoard')}}">চাকরির প্রস্তুতি</a>
-                            <a href="{{route('userQuizHome')}}">কুইজ হোম</a>
+                            <a href="{{route('ChampledarBoard')}}">Championship</a>
+                            <a href="{{route('JobledarBoard')}}">Job Practice</a>
+                            <a href="{{route('userQuizHome')}}">Quiz Home</a>
                             @endhasrole
                         </div>
                     </div>

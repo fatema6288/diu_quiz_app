@@ -2,7 +2,7 @@
     <x-slot name="header">
         <div class="md:flex justify-between">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('সকল চাকরির প্রস্তুতি') }}
+                {{ __('All Job Peparation') }}
             </h2>
         </div>
     </x-slot>

@@ -17,6 +17,7 @@ use App\Http\Livewire\CatJobComponent;
 use App\Http\Livewire\ChampionshipComponent;
 use App\Http\Livewire\ChampionshipLeaderboardComponent;
 use App\Http\Livewire\ChampionshipPractice;
+use App\Http\Livewire\EditJobCategoryComponent;
 use App\Http\Livewire\EnrollComponent;
 use App\Http\Livewire\ExamComponent;
 use App\Http\Livewire\ExamEditComponent;
@@ -113,6 +114,12 @@ Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->group(fu
     
     Route::post('/storeJobCategory', [AddJobCategoryComponent::class, 'storeCategory'])
         ->name('storeJobCategory');
+    
+    Route::get('/edit_job_category/{id}',EditJobCategoryComponent::class)
+        ->name('editJobCat');
+
+    Route::post('/update_job_cat/{id}', [EditJobCategoryComponent::class, 'updateCategory'])
+        ->name('updateCategory');
 
     //Exam
     Route::get('/examList',ExamListComponent::class)

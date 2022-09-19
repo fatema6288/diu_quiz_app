@@ -2,7 +2,7 @@
     <div class="row ">
         <div class="col-md-6 py-3">
             <div class="col-md-12 d-flex justify-content-center">
-                <h4>কুইজ লিডার</h4>
+                <h4>Quiz Leader</h4>
             </div>
             <div class="col-md-12 d-flex justify-content-center">
                 @foreach($quizleader as $leader)
@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-6 py-3">
             <div class="col-md-12 d-flex justify-content-center">
-                <h4>চাকরির প্রস্তুতি লিডার</h4>
+                <h4>Job Peparation Leader</h4>
             </div>
             <div class="col-md-12 d-flex justify-content-center">
                 @foreach($jobleader as $leader)

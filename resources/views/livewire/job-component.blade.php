@@ -2,7 +2,7 @@
     <x-slot name="header">
         <div class="md:flex justify-between">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('চাকরির প্রস্তুতি') }}
+                {{ __('Job Peparation') }}
             </h2>
         </div>
     </x-slot>
@@ -12,9 +12,9 @@
                 <div class="col-md-3  my-auto">
                         <div class="card" style="width: 18rem;">
                             @if(!empty($teacher->image))
-                            <img src="{{asset('assets/img/teacherprofile')}}/{{$teacher->image}}" class="card-img-top" alt="job_exam_thumbnail">
+                            <img src="{{asset('assets/img/teacherprofile')}}/{{$teacher->image}}" style="height: 250px" class="card-img-top" alt="job_exam_thumbnail">
                             @else
-                            <img src="{{asset('assets/img/profile/teacher1.png')}}" class="card-img-top" alt="teacherimg">
+                            <img src="{{asset('assets/img/profile/teacher1.png')}}" style="height: 250px" class="card-img-top" alt="teacherimg">
                             @endif
                             <div class="card-body">
                                 <h5 class="card-title"><b>Name : {{$teacher->name}}</b></h5>
@@ -40,7 +40,7 @@
             @foreach ($exams as $exam)
             <div class="col-md-3 d-flex justify-content-around my-3">
                 <div class="card" style="width: 18rem;">
-                    <img src="{{asset('assets/img/std.jpg')}}" class="card-img-top" alt="...">
+                    <img src="{{asset('assets/img/std.jpg')}}" style="height: 200px" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><b> {{$exam->exam_title}}</b></h5>
                         <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-danger">

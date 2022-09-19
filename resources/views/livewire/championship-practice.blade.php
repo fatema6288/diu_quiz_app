@@ -2,7 +2,7 @@
     <x-slot name="header">
         <div class="md:flex justify-between">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('চ্যাম্পিয়নশিপ প্রস্তুতি চ্যালেঞ্জ') }}
+                {{ __('Championship Practice Chalange') }}
             </h2>
         </div>
     </x-slot>
@@ -13,9 +13,9 @@
             <div class="col-md-3 my-3 d-flex justify-content-around">
                 <div class="card" style="width: 18rem;">
                     @if(!empty($exam->exam_thumbnail))
-                    <img src="{{asset('assets/img/examthumbnail')}}/{{$exam->exam_thumbnail}}" class="card-img-top" alt="championship_thumbnail">
+                    <img src="{{asset('assets/img/examthumbnail')}}/{{$exam->exam_thumbnail}}" style="height: 200px" class="card-img-top" alt="championship_thumbnail">
                     @else
-                    <img src="{{asset('assets/img/std.jpg')}}" class="card-img-top" alt="championship_thumbnail">
+                    <img src="{{asset('assets/img/std.jpg')}}" style="height: 200px" class="card-img-top" alt="championship_thumbnail">
                     @endif
                     <div class="card-body">
                         <h5 class="card-title">{{$exam->exam_title}}</h5>
