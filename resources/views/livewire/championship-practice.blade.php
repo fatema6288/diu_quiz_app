@@ -7,7 +7,7 @@
         </div>
     </x-slot>
     {{-- Exam Category Start --}}
-    <div class="container my-3" style="background-color: #FFFFFF;">
+    <div class="container my-3" style="background-color: #FFFFFF;height:100vh">
         <div class="row">
             @foreach($exams as $exam)
             <div class="col-md-3 my-3 d-flex justify-content-around">
